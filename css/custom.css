@@ -248,48 +248,41 @@ html, body {
    */
    /* Ensure the container hides overflow items */
    /* Adjustments for small screens */
-/* Adjustments for small screens */
+
+
+
 @media (max-width: 768px) {
   .carousel-container {
-    width: 100%; /* Ensure full width on smaller screens */
+    width: 10%; /* Ensure full width on smaller screens */
   }
 
   .services-container {
     flex-direction: column; /* Stack items vertically on small screens */
+   width: 650px;
    
+   margin-left: 50px;
     padding: 0 10px; /* Add padding to ensure content does not touch edges */
     align-items: center; /* Center items horizontally */
     box-sizing: border-box; /* Ensure padding is included in width */
   }
   .service{
-  
-    width: 700px; /* Ensure the section takes full width */
+    height: 900px !important;
+     /* Ensure the section takes full width */
     padding: 20px; /* Adjust padding for small screens */
-    
+    width: 10%;
     box-sizing: border-box; /* Include padding and border in width */
     text-align: center; /* Center align text */
-    height: 900px;
+    height: 300px;
     }
-  .service-box {
-    width: 50%; /* Full width for each service box */
-    max-width: 50%; /* Ensure it does not exceed container width */
-    
-    padding: 20px;
-    
-    margin-left: -20px; /* Remove margin */
-    border: none; /* Remove border for small screens */
-    overflow: hidden; /* Prevent overflow of content */
-  }
-
-  .carousel-btn {
-    width: 25px; /* Adjust button size for small screens */
-    height: 25px;
-    font-size: 16px; /* Adjust font size */
-  }
+    .service h1{
+      margin-left: -600px;
+    }
+ 
 
   .tooltip-btn {
     font-size: 12px; /* Adjust font size for small screens */
     padding: 8px 16px; /* Adjust padding */
+   
   }
 
   .tooltip {
@@ -317,14 +310,6 @@ html, body {
     width: 120px; /* Further adjust tooltip width */
   }
 }
-
-.carousel-container {
-  position: relative;
-  width: 100%;
-  margin: auto;
-  overflow: hidden;
-}
-
 .services-container {
   display: flex;
   transition: transform 0.5s ease-in-out;
