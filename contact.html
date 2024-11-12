@@ -23,11 +23,12 @@
         </div>
     </div>
     <div class="social-media">
-        <a href="https://twitter.com/yourprofile" target="_blank"><i class="bi bi-twitter"></i></a>
-        <a href="https://facebook.com/yourprofile" target="_blank"><i class="bi bi-facebook"></i></a>
-        <a href="https://instagram.com/yourprofile" target="_blank"><i class="bi bi-instagram"></i></a>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="bi bi-linkedin"></i></a>
-        <a href=""><i class="bi bi-tiktok"></i></a>
+      <a href="https://wa.me/+250790755673" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://x.com/IMVUNWA" target="_blank"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61568279529130" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/imvunwa_businessgroup/" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/imvunwa-business-group-3221272b5/?trk=opento_sprofile_details" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.tiktok.com/@imvunwa"><i class="bi bi-tiktok"></i></a>
     </div>
 </div>
 <header>
@@ -126,26 +127,26 @@
       </div>
       <div class="col-lg-8">
         <div class="contact-form rounded-box">
-          <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade" data-aos-delay="100">
+          <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade" data-aos-delay="100" id="contactForm">
             <div class="row gy-4">
-              <div class="col-md-6">
-                <input type="text" name="name" class="form-control" placeholder="Your Name" required=""><br><br>
-              </div>
-              <div class="col-md-6">
-                <input type="email" class="form-control" name="email" placeholder="Your Email" required=""><br>
-              </div>
-              <div class="col-md-12">
-                <input type="text" class="form-control" name="subject" placeholder="Subject" required=""><br>
-              </div>
-              <div class="col-md-12">
-                <textarea class="form-control" name="message" rows="8" placeholder="Message" required=""></textarea><br>
-              </div>
-              <div class="col-md-12 text-center">
-                
-                <button type="submit">Send Message</button>
-              </div>
+                <div class="col-md-6">
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required=""><br><br>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required=""><br>
+                </div>
+                <div class="col-md-12">
+                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required=""><br>
+                </div>
+                <div class="col-md-12">
+                    <textarea class="form-control" id="message" name="message" rows="8" placeholder="Message" required=""></textarea><br>
+                </div>
+                <div class="col-md-12 text-center">
+                    <button type="submit" id="sendMessageBtn" name="submitContact">Send Message</button>
+                </div>
             </div>
-          </form>
+        </form>
+        
         </div>
       </div>
     </div>
@@ -162,15 +163,13 @@
             <span class="sitename">Imvunwa</span>
           </a>
           <p>Imvunwa is a leading metal fabrication, painting, repair, and restoration company, dedicated to delivering exceptional services to our clients.</p>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter"></i></a>
-
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-            <a href=""><i class="bi bi-tiktok"></i></a>
-
-
+          <div class="social-media">
+            <a href="https://wa.me/+250790755673" target="_blank"><i class="bi bi-whatsapp"></i></a>
+              <a href="https://x.com/IMVUNWA" target="_blank"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.facebook.com/profile.php?id=61568279529130" target="_blank"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/imvunwa_businessgroup/" target="_blank"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/imvunwa-business-group-3221272b5/?trk=opento_sprofile_details" target="_blank"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.tiktok.com/@imvunwa"><i class="bi bi-tiktok"></i></a>
           </div>
         </div>
   
@@ -229,6 +228,27 @@
             selector: '.glightbox'
         });
     </script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevents the default form submission
+
+      var messageText = "for contacting us"; // Message text
+      if (messageText != '') {
+          Swal.fire({
+              title: "Thank you",
+              text: messageText,
+              icon: "success"
+          });
+      }
+
+      // Here you can add the logic to handle the form submission
+      // For example, send the data to your server using AJAX, then reset the form if needed.
+  });
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
