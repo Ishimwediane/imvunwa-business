@@ -84,88 +84,123 @@
             Each project reflects our commitment to excellence and innovation, highlighting how we bring clients' visions to life.
            </p>
       </div>
-  <!-- Portfolio Filters -->
-  <ul class="portfolio-filters">
-    <li><a href="#" data-filter="all">All</a></li>
-    <li><a href="#" data-filter="welding">Welding</a></li>
-    <!--<li><a href="#" data-filter="painting">Painting</a></li>-->
-       <li><a href="#" data-filter="graphic-design">Manufacturing</a></li><br><br>
-  </ul>
-
-  <!-- Portfolio Container -->
-  <div class="portfolio-container">
-    <!-- Welding Projects -->
-    <div class="portfolio-item welding">
-      <h3></h3>
-      <a href="nn.html"><img src="image/welding pic/akantu.jpg" alt="Welding Project 1"></a>
-    </div>
-    <div class="portfolio-item welding">
-      <h3></h3>
-      <a href="nn.html"><img src="image/welding pic/akantu2.jpg" alt="Welding Project 2">
-    </a></div>
-    <div class="portfolio-item welding">
-      <h3></h3>
-      <a href="nn.html"><img src="image/welding pic/bed3.jpg" alt="Welding Project 2">
-    </a></div>
-    <div class="portfolio-item welding">
-      <h3></h3>
-      <a href="nn.html"><img src="image/welding pic/bed5.jpg" alt="Welding Project 2">
-    </a></div>
-    <div class="portfolio-item welding">
-      <h3></h3>
-      <a href="nn.html"><img src="image/welding pic/chair.jpg" alt="Welding Project 2">
-    </a></div>
-    <div class="portfolio-item welding">
-      <h3></h3>
-      <a href="nn.html"><img src="image/welding pic/etajel.jpg" alt="Welding Project 2">
-    </a></div>
-    <div class="portfolio-item welding">
-      <h3></h3>
-      <a href="nn.html"><img src="image/welding pic/urugi.png" alt="Welding Project 2">
-    </a></div>
-
-
-    <!-- Painting Projects 
-    <div class="portfolio-item painting">
-      <h3>Painting Project 1</h3>
-     
-      <a href="" class="glightbox"><img src="image/project3.jpg" alt="Painting Project 1"></a>
-    </div>
-    <div class="portfolio-item painting">
-      <h3>Painting Project 2</h3>
-      
-      <a href="" class="glightbox"><img src="image/project4.jpg" alt="Painting Project 2">
-    </a></div>-->
-
   
-    <!-- Graphic Design Projects -->
-    
-    <div class="portfolio-item graphic-design">
-      
-      
-      <a href="" class="glightbox"><img src="image/manufacturing/imachini.jpg" alt="product Design Project 2">
-    </a></div>
+  <!-- Portfolio Container -->
+  </div>
+  <div>
+      <ul class="category-list">
+        <li class="category" onclick="toggleSubcategory('housing')" id="housing-component">Housing Components</li>
+        <ul id="housing" class="subcategory-list  hidden">
+            <li class="subcategory" onclick="showImages('doors-gallery')">Doors and Windows
+            <div id="doors-gallery" class="image-gallery  hidden">
+              <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737269564/urugi1_wfhunu.jpg" alt="door">
+              <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737269539/urugi_eeirld.png" alt="door">
+              <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737269563/urugi1_fyroyr.jpg" style="width:600px;"  alt="door">
+              <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737269530/door_kurwjw.jpg" style="width:150px;" alt="door">
+              <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737269564/window1_ej4yak.webp" style="width:150px;" alt="door">
+              <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737269563/window_cirwlq.webp" alt="door">
+              
+              
+              
+            </div></li>
+            <li class="subcategory" onclick="showImages('gutters_roof')">Gutters and Roof truss
+              <div id="gutters_roof" class="image-gallery  hidden">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737271044/igisenge1_vwresp.jpg" style="width:350px;" alt="roof">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737271050/igisenge2_obn37w.jpg" style="width:350px;" alt="roof">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737271044/igisenge_yqx9bo.webp" style="width:250px;" alt="roof">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737271043/gutter_tebog5.jpg" style="width:200px;" alt="gutter">
+              </div>
+            </li>
+            <li class="subcategory" onclick="showImages('gate_handrails')">Gates,Metal fence and Handrails 
+              <div id="gate_handrails" class="image-gallery  hidden">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737271065/fence_gqpcuu.jpg" alt="fence">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737271065/fence1_o0qhqa.jpg" alt="fence">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737271066/gate_mxs5mf.jpg" alt="gate">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737271069/gate1_za1lfj.jpg" alt="gate">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737271071/handrails_qtefxw.jpg" alt="Handrails">
+                
+              </div>
+            </li>
+        </ul>
 
-    
-    <div class="portfolio-item graphic-design">
-      
-      
-      <a href="" class="glightbox"><img src="image/manufacturing/imachini2.jpg" alt="product Design Project 2">
-    </a></div>
+        <li class="category" onclick="toggleSubcategory('furniture')" >Home Furniture</li>
+        <ul id="furniture" class="subcategory-list hidden">
+            <li class="subcategory" onclick="showImages('living')" >Living Room and Dining Furniture
+              <div id="living" class="image-gallery  hidden">
+                <!-- <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737271886/project5_xonc61.jpg" alt="project">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737271884/project4_wexrrj.jpg" alt="project">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737271884/project2_xd0laj.jpg" alt="project">-->
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737272414/akantu2_hvymtk.jpg" style="width:350px;" alt="project"> 
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737271865/chair_h2mlzw.jpg" style="width:350px;" alt="chair">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737271860/akantu_fxgdbw.jpg" style="width:350px;" alt="akant">
+              </div>
+            </li>
+            <li class="subcategory" onclick="showImages('storage')">Storage Furnitures
+              <div id="storage" class="image-gallery  hidden">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737271994/tv_ycqrfw.jpg" style="width:350px;" alt="stand">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737271982/dish_uhzwyv.jpg" style="width:250px;" alt="storage">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737271988/shoe_qgicpb.webp" style="width:250px;" alt="shoe">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737271996/testimoni_jthlk4.jpg" style="width:200px;" alt="shoe">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737271982/dish1_ncqypq.webp" style="width:200px;" alt="stand">
+              </div>
+            </li>
+            <li class="subcategory" onclick="showImages('bed')">Bedroom Furnitures
+              <div id="bed" class="image-gallery  hidden">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737273704/robe_ccbsb2.jpg" style="width:300px;"  alt="robe">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737273730/bed5_g4gve3.jpg" style="width:300px; " alt="bed">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737273748/bed3_oshfev.jpg" style="width:300px;" alt="bed">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737273766/bed_xnqtsg.jpg" style="width:300px; " alt="bed">
+               
+              </div>
+            </li>
+          </ul>
 
-    <div class="portfolio-item graphic-design">
-      
-      
-      <a href="" class="glightbox"><img src="image/manufacturing/imbabura.jpg" alt="product Design Project 2">
-    </a></div>
+        <li class="category" onclick="toggleSubcategory('metal')">Metal Products for Schools and Markets
 
-    <div class="portfolio-item graphic-design">
-      
-      
-      <a href="" class="glightbox"><img src="image/manufacturing/isombe.jpg" alt="product Design Project 2">
-    </a></div>
-  </div></div></div>
-  <br><br><br><br>
+        </li>
+        <ul id="metal" class="subcategory-list hidden">
+            <li class="subcategory" onclick="showImages('school')">School Furniture
+              <div id="school" class="image-gallery  hidden">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737274538/desk1_hdzj37.png"   alt="desk">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737274180/desk2_rxgq1o.webp"  alt="desk">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737274174/desk_tvpwjw.jpg" alt="desk">
+                <!-- <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737273766/bed_xnqtsg.jpg" style="width:300px; " alt="bed"> -->
+               
+              </div>
+            </li>
+            <li class="subcategory" onclick="showImages('market')">Market Equipment
+              <div id="market" class="image-gallery  hidden">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737274192/akandiketajeri_em5h5s.jpg"   alt="stand">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737274193/aketajeri_as9ozm.jpg"  alt="stand">
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737274199/etajel_s31sd3.jpg" alt="stand">
+                <!-- <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737273766/bed_xnqtsg.jpg" style="width:300px; " alt="bed"> -->
+               
+              </div>
+            </li>
+        </ul>
+
+        <li class="category" onclick="toggleSubcategory('machines')">Machine Manufacturing and Repair</li>
+        <ul id="machines" class="subcategory-list hidden">
+            <li class="subcategory" onclick="showImages('machine')">Machines
+              <div id="machine" class="image-gallery  hidden"><div class="project-container">
+              <div class="machine-hover"><h2>chicken processing machine</h2>
+                It removes feathers from poultry after slaughter, preparing the chicken for cooking.</div> 
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737275297/imachini_sbunsq.jpg" style="width:350px; "  alt="pigfeeder"></div>
+                <div class="project-container"><div class="machine-hover"><h2>Cassava leaf grinder</h2>
+                  Machine that gring cassava leaves </div>
+                <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737275306/isombe_ek6jyo.jpg"  style="width:300px; " alt="isombe"></div>
+                <div class="project-container"><div class="machine-hover"><h2>Electric stove with semi-furnace</h2>
+                  kitchen appliance that uses electricity to heat and cook food</div>
+                  <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737275301/imbabura_gcgs7q.jpg" style="width:300px; " alt="imbabura"></div>
+                  <div class="project-container"><div class="machine-hover"><h2>Pig feeder</h2>
+                    Machine used to provide food to pigs in an efficient, hygienic, and controlled manner.</div>
+                    <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737275297/imachini2_sqmkr7.jpg" style="width:300px; " alt="isombe"> </div>
+               
+              </div>
+            </li>
+        </ul>
+    </ul>
+  </div>
 </section>
     <section id="contact" class="who-are section">
         <div class="image-container">

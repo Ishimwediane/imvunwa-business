@@ -42,8 +42,6 @@ function goToStep(step) {
 
 document.addEventListener('DOMContentLoaded', () => {
     showStep(currentStep);
-    
-    // Add event listeners to dots
     const dots = document.querySelectorAll('.dot');
     dots.forEach((dot, index) => {
         dot.addEventListener('click', () => {

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout with Titles</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .template {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .grid-section {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: calc(25% - 20px); /* Four sections per row */
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .grid-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns per row */
+            gap: 10px;
+            padding: 15px;
+        }
+
+        .grid-item {
+            text-align: center;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            max-height: 100px;
+            object-fit: cover;
+            border-radius: 4px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .grid-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .grid-item p {
+            margin-top: 5px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .explore-btn {
+            display: block;
+            margin: 10px auto 15px;
+            padding: 10px 20px;
+            text-align: center;
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .explore-btn:hover {
+            background-color: #e69500;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="template">
+            <!-- First Section -->
+            <div class="grid-section">
+                <div class="title">Housing Components</div>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737271044/igisenge1_vwresp.jpg" alt="Roof Truss">
+                        <p>Roof Truss</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737283502/gutter1_o78cer.jpg" alt="Gutters">
+                        <p>Gutters</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737271065/fence_gqpcuu.jpg" alt="Metal Fences">
+                        <p>Metal Fences</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737269563/window_cirwlq.webp" alt="Windows">
+                        <p>Windows</p>
+                    </div>
+                </div>
+                <button class="explore-btn">Explore More</button>
+            </div>
+
+            <!-- Second Section -->
+            <div class="grid-section">
+                <div class="title">Interior Components</div>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737271994/tv_ycqrfw.jpg" alt="TV">
+                        <p>TV</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737271982/dish_uhzwyv.jpg" alt="Dish">
+                        <p>Dish</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737273704/robe_ccbsb2.jpg" alt="Robe">
+                        <p>Robe</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737273730/bed5_g4gve3.jpg" alt="Bed">
+                        <p>Bed</p>
+                    </div>
+                </div>
+                <button class="explore-btn">Explore More</button>
+            </div>
+
+            <!-- Third Section -->
+            <div class="grid-section">
+                <div class="title">Storage Components</div>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737274193/aketajeri_as9ozm.jpg" alt="Cabinet">
+                        <p>Cabinet</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737274199/etajel_s31sd3.jpg" alt="Shelf">
+                        <p>Shelf</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737274180/desk2_rxgq1o.webp" alt="Desk">
+                        <p>Desk</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737274174/desk_tvpwjw.jpg" alt="Table">
+                        <p>Table</p>
+                    </div>
+                </div>
+                <button class="explore-btn">Explore More</button>
+            </div>
+
+            <!-- Fourth Section -->
+            <div class="grid-section">
+                <div class="title">Kitchen Appliances</div>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737275297/imachini_sbunsq.jpg" alt="Coffee Maker">
+                        <p>Coffee Maker</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737275306/isombe_ek6jyo.jpg" alt="Blender">
+                        <p>Blender</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737275301/imbabura_gcgs7q.jpg" alt="Oven">
+                        <p>Oven</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://res.cloudinary.com/dfe7ue90j/image/upload/v1737275297/imachini2_sqmkr7.jpg" alt="Mixer">
+                        <p>Mixer</p>
+                    </div>
+                </div>
+                <button class="explore-btn">Explore More</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
